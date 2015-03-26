@@ -2,9 +2,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="terminalparty"
 
-DISABLE_AUTO_UPDATE="true"
+DISABLE_UPDATE_PROMPT="true"
 
-plugins=(git debian gitfast git-extras knife phing screen sudo vagrant wd)
+plugins=(aws command-not-found composer encode64 git gitfast git-extras knife lol nyan phing screen sprunge sublime sudo vagrant web-search wd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,4 +20,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
 fi
-
