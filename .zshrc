@@ -4,7 +4,7 @@ ZSH_THEME="terminalparty"
 
 DISABLE_UPDATE_PROMPT="true"
 
-plugins=(adb bower command-not-found composer debian encode64 git gitfast git-extras jira jsontools knife lwd lol npm nyan screen sprunge sudo systemd wd)
+plugins=(aws bower command-not-found composer common-aliases compleat debian docker encode64 gpg-agent git gitfast git-extras github knife npm nyan perms screen sprunge sudo systemd vagrant web-search yarn wd)
 
 source $ZSH/oh-my-zsh.sh
 
