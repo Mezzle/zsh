@@ -1,22 +1,58 @@
-export ZSH=$HOME/.oh-my-zsh
+if [ ! -d $HOME/.antigen ]; then
+    mkdir $HOME/.antigen
+fi
 
-ZSH_THEME="terminalparty"
+if [ ! -f $HOME/.antigen/antigen.zsh ]; then
+    curl -sL git.io/antigen > $HOME/.antigen/antigen.zsh
+fi
 
-DISABLE_UPDATE_PROMPT="true"
+source $HOME/.antigen/antigen.zsh
 
-plugins=(aws bower command-not-found composer common-aliases compleat debian docker encode64 gpg-agent git gitfast git-extras github knife npm nyan perms screen sprunge sudo systemd vagrant web-search yarn wd)
+antigen use oh-my-zsh
 
-source $ZSH/oh-my-zsh.sh
+antigen bundle aws
+antigen bundle bower
+antigen bundle command-not-found
+antigen bundle composer
+antigen bundle common-aliases
+antigen bundle compleat
+antigen bundle debian
+antigen bundle docker
+antigen bundle encode64
+antigen bundle gpg-agent
+antigen bundle git
+antigen bundle gitfast
+antigen bundle git-extras
+antigen bundle github
+antigen bundle knife
+antigen bundle npm
+antigen bundle nyan
+antigen bundle perms
+antigen bundle screen
+antigen bundle sprunge
+antigen bundle sudo
+antigen bundle systemd
+antigen bundle vagrant
+antigen bundle web-search
+antigen bundle yarn
+antigen bundle wd
+
+antigen theme terminalparty
+
+antigen bundle zsh-users/zsh-autosuggestions
+
+antigen apply
+
 
 if [ -d $HOME/.zshrc.d ]; then
-  for file in $HOME/.zshrc.d/*.zsh; do
-    source $file
-  done
+    for file in $HOME/.zshrc.d/*.zsh; do
+        source $file
+    done
 fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+    export EDITOR='vim'
 else
-  export EDITOR='vim'
+    export EDITOR='vim'
 fi
