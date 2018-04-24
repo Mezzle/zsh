@@ -3,18 +3,19 @@ antigen use oh-my-zsh
 antigen bundle aws
 antigen bundle bower
 antigen bundle command-not-found
-antigen bundle composer
 antigen bundle common-aliases
 antigen bundle compleat
+antigen bundle composer
 antigen bundle docker
 antigen bundle encode64
-antigen bundle gpg-agent
 antigen bundle git
-antigen bundle gitfast
 antigen bundle git-extras
+antigen bundle gitfast
 antigen bundle github
+antigen bundle gpg-agent
 antigen bundle knife
 antigen bundle npm
+antigen bundle npx
 antigen bundle nyan
 antigen bundle osx
 antigen bundle perms
@@ -23,9 +24,9 @@ antigen bundle sprunge
 antigen bundle sudo
 antigen bundle systemd
 antigen bundle vagrant
+antigen bundle wd
 antigen bundle web-search
 antigen bundle yarn
-antigen bundle wd
 
 antigen theme terminalparty
 
