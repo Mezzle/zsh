@@ -14,7 +14,6 @@ antigen bundle gpg-agent
 antigen bundle knife
 antigen bundle npm
 antigen bundle npx
-antigen bundle nyan
 antigen bundle osx
 antigen bundle perms
 antigen bundle screen
