@@ -1,12 +1,12 @@
+if [ ! -f /usr/local/share/antigen/antigen.zsh ]; then
+    brew install antigen
+fi
+
 if [ ! -d $HOME/.antigen ]; then
     mkdir $HOME/.antigen
 fi
 
-if [ ! -f $HOME/.antigen/antigen.zsh ]; then
-    curl -sL git.io/antigen > $HOME/.antigen/antigen.zsh
-fi
-
-source $HOME/.antigen/antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 
 antigen init $HOME/.antigenrc
 
