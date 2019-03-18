@@ -11,6 +11,7 @@ antigen bundle git-extras
 antigen bundle gitfast
 antigen bundle github
 antigen bundle gpg-agent
+antigen bundle iterm2
 antigen bundle knife
 antigen bundle npm
 antigen bundle npx
