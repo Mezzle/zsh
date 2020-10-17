@@ -25,3 +25,5 @@ if [ -d $HOME/.zshrc.d ]; then
         source $file
     done
 fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
