@@ -7,7 +7,6 @@ antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle dbz/kube-aliases
 antigen bundle eventi/noreallyjustfuckingstopalready
 antigen bundle mezzle/plugin-osx
-antigen bundle benjefferies/safe-kubectl
 antigen bundle laggardkernel/zsh-thefuck
 antigen bundle zpm-zsh/undollar
 
